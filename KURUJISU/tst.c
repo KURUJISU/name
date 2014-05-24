@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-int main(){
- pintf("hello"\n);
+int main()
+{
+  for(i=0;i<10;i++){
+     pintf("hello"\n);
+  }
+
  return 0;
 } 
