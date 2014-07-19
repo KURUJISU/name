@@ -1,6 +1,6 @@
 float cx,cy,r;
-float A=0;
-float B=0;
+float SwitchA=0;
+float SwitchB = 0;
 
 void setup(){
  size(400,400);
@@ -15,25 +15,25 @@ void mousePressed(){
   float dx=cx-px;
   float dy=cy-py;
   if(dx*dx + dy*dy < r*r){
-   A=1;
+	  SwitchA = 1;
    println("B");
   }
 }
 
 void mouseDragged(){
-  if(A==1){
+	if (SwitchA == 1){
  cx=mouseX;
  cy=mouseY;
- B=1;
+ SwitchB = 1;
   }
 }
 
 void mouseReleased(){
-  if(B==1){
+	if (SwitchB == 1){
  cx=mouseX;
  cy=mouseY;
- A=0;
- B=0;
+ SwitchA = 0;
+ SwitchB = 0;
   }
 }
 
